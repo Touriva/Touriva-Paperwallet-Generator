@@ -2,7 +2,7 @@
 .less { background: url("./images/minus.png") no-repeat left center; width: 17px; height: 17px; display: inline-block; float: right; }
 a { position: relative; z-index: 20; text-decoration: none; color: #d58424; }
 .right { text-align: right; }
-.walletarea { display: none; border: 1px solid #BFBFBF; background-color: white; }
+.walletarea { display: none; border: 1px solid ##f0f2fc; background-color: #f0f2fc; radius: 5px; }
 hr { margin: 20px 0; border-top: 1px dashed #008000; }
 .keyarea { height: 110px; text-align: left; position: relative; padding: 25px 25px 10px; }
 .keyarea .public { float: left; }
@@ -69,7 +69,7 @@ h1 { margin: 0px; height: 91px; }
 #keyarea .qrcode_private { float: none; display: block; top: 0; text-align: right; padding: 13px 11px 11px 11px; }
 #keyarea .private { width: 30%; display: table-cell; }
 #keyarea .public { width: 30%; display: table-cell; }
-#singlearea { font-size: 90%; display: block; }
+#singlearea { font-size: 90%; display: block; background-color: #f0f2fc; border-radius: 5px;}
 #singlesecret { position: relative; top: -130px; float: right; right: 200px; color: red; font-weight: bolder; font-size: 200%;  }
 #singleshare { position: relative; top: -110px; float: left; left: 160px; color: green; font-weight: bolder; font-size: 200%;  }
 #singlesafety { text-align: left; border-bottom: 1px solid #bfbfbf; position: relative; min-height: 500px; }
