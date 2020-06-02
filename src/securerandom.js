@@ -1,3 +1,4 @@
+
 /*!
 * Random number generator with ArcFour PRNG
 * 
@@ -185,3 +186,4 @@
 		}
 	}
 })();
+  
