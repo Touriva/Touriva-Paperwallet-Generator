@@ -73,47 +73,60 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <script src="src/bitcoinjs-lib.util.js" type="text/javascript"></script>
   <script src="src/crypto-scrypt.js" type="text/javascript"></script>
   <script src="src/jsqrcode.js" type="text/javascript"></script>
-  <link rel="stylesheet" type="text/css" href="./src/main.css"> 
+  <link rel="stylesheet" type="text/css" href="./src/css/main.css"> 
+  <link rel="stylesheet" type="text/css" href="./src/css/normalize.css"> 
+  <link rel="stylesheet" type="text/css" href="./src/css/tourivawallet.webflow.css"> 
+  <link rel="stylesheet" type="text/css" href="./src/css/webflow.css"> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <!-- <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon"> -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-159290958-1"></script>
+  <script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-159290958-1', {'anonymize_ip': false});</script>
+  <script type="text/javascript">!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.agent='plwebflow';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '121047578360281');fbq('track', 'PageView');</script>
   
 </head>
 <body onclick="SecureRandom.seedTime();" onmousemove="ninja.seeder.seed(event);">
   <div id="busyblock"></div>
-  <div id="main">
-    <div id="culturemenu">
-      <span><a href="?culture=en" hreflang="en" id="cultureen" class="selected">English</a></span> |
-      <span><a href="?culture=fr" hreflang="fr" id="culturefr">Français</a></span> |
-      <span><a href="?culture=de" hreflang="de" id="culturede">German</a></span> |
-      <span><a href="?culture=nl" hreflang="nl" id="culturenl">Dutch</a></span> |
-      <span><a href="?culture=pt" hreflang="pt" id="culturept">Português</a></span> |
-      <span><a href="?culture=ru" hreflang="ru" id="cultureru">Русский</a></span> |
-      <span><a href="?culture=es" hreflang="es" id="culturees">Spanish</a></span> |
-      <span><a href="?culture=it" hreflang="it" id="cultureit">Italiano</a></span> |
-      <span><a href="?culture=ua" hreflang="ua" id="cultureua">Українська</a></span> |
-      <span><a href="?culture=tr" hreflang="tr" id="culturetr">Türk</a></span> |
-      <span><a href="?culture=pl" hreflang="pl" id="culturepl">Polski</a></span> |
-      <span><a href="?culture=zh" hreflang="zh" id="culturezh">中文</a></span>
-    </div>
-
-    <div class="banner">
-      <div id="coinLogo">
-        <img id="coinLogoImg" src="images/touriva.png" alt="Universal Open Source Client-Side Wallet Generator" />
+  <div data-collapse="medium" data-animation="over-right" data-duration="400" data-doc-height="1" data-no-scroll="1" role="banner" class="navbar-2 w-nav">
+    <div data-w-id="59b12e51-30de-369a-2ff5-1e4b18e3d2bf" class="div-block-5"></div>
+    <div class="wrapper-4 nav-bar-wrapper"><a href="https://touriva.info" class="brand w-nav-brand"><img src="images/touriva-horizontal.png" alt="" class="logo-icon logo__icon--whitepaper"></a>
+      <div class="navigation">
+        <div class="menu-button-3 w-nav-button">
+          <div class="icon w-icon-nav-menu"></div>
+        </div>
+        <nav role="navigation" class="nav-menu-3 w-nav-menu"><a href="https://touriva.info" class="nav-link-6 w-nav-link">Touriva.info</a><a href="https://trello.com/b/ICrb0AXr/interactive-roadmap" target="_blank" class="nav-link-6 w-nav-link">Roadmap</a><a href="https://touriva.info/whitepaper" class="nav-link-6 w-nav-link">Whitepaper</a><a href="https://touriva.info/links" class="nav-link-6 w-nav-link">Links</a><a href="#Downloads" class="nav-link-6 betabutton w-nav-link">Download</a></nav>
       </div>
-      <h1>
-        <img id="siteTitle" src="images/banner.png" alt="Touriva Paper Wallet Generator" />
-      </h1>
     </div>
-
+  </div>
+  <div class="section__hero">
+    <div data-w-id="62391298-07ec-a888-6b96-dd852318c7c7" style="opacity:1" class="container w-container">
+      <h1 class="heading__hero">Touriva Paper Wallet</h1>
+      <p class="paragraph__hero">Generate your personal paper wallet</p>
+    </div>
+  </div>
+  
     <div id="seedpoolarea"><textarea rows="16" cols="62" id="seedpool"></textarea></div>
 
-    <div class="menu" id="menu">
-      <div class="tab i18n selected" id="singlewallet" onclick="ninja.tabSwitch(this);">Single Wallet</div>
-      <div class="tab i18n" id="paperwallet" onclick="ninja.tabSwitch(this);">Paper Wallet</div>
-      <div class="tab i18n" id="bulkwallet" onclick="ninja.tabSwitch(this);">Bulk Wallet</div>
-      <div class="tab i18n" id="brainwallet" onclick="ninja.tabSwitch(this);">Brain Wallet</div>
-      <div class="tab i18n" id="detailwallet" onclick="ninja.tabSwitch(this);">Wallet Details</div>
-      <div class="tab i18n" id="donate" onclick="ninja.tabSwitch(this);">Support</div>
-    </div>
-
+    <div class="section__generator">
+      <div class="container__generator w-container">
+        <div class="intro__text">
+          <h1 data-w-id="51655d1d-ce32-62f7-eae6-9d87e18af292" style="opacity:1" class="dark-heading-2">Wallet Generator<br></h1>
+          <p data-w-id="51655d1d-ce32-62f7-eae6-9d87e18af295" style="opacity:1" class="text-dark-grey-2">Move around with your mouse and see your keys appear</p>
+        </div>
+      </div>
+        <div class="menu" id="menu">
+        <div class="tab i18n selected" id="singlewallet" onclick="ninja.tabSwitch(this);">Single Wallet</div>
+        <div class="tab i18n" id="paperwallet" onclick="ninja.tabSwitch(this);">Paper Wallet</div>
+        <div class="tab i18n" id="bulkwallet" onclick="ninja.tabSwitch(this);">Bulk Wallet</div>
+        <div class="tab i18n" id="brainwallet" onclick="ninja.tabSwitch(this);">Brain Wallet</div>
+        <div class="tab i18n" id="detailwallet" onclick="ninja.tabSwitch(this);">Wallet Details</div>
+        <div class="tab i18n" id="donate" onclick="ninja.tabSwitch(this);">Support</div>
+      </div>
+    <div id="main">
     <div id="wallets">
       <div id="singlearea" class="walletarea">
 
@@ -163,114 +176,23 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             <div id="singlesecret" class="i18n">SECRET</div>
           </div>
         </div>
-
-        <div id="singlesafety">
-          <div class="firstHalfSingleSafety">
-
-            <h3 id="securitystep0title" class="i18n">Step 0. Follow the security checklist recommendation</h3>
-            <p id="securitystep0" class="i18n">
-              First step is to <strong>download</strong> this website from <a href="https://github.com/Touriva/Touriva-Paperwallet-Generator">Github</a> and open the index.html file directly from your computer. It's just too easy to sneak some evil code in the 6000+ lines of javascript to leak your private key, and you don't want to see your fund stolen. Code version control make it much easier to cross-check what actually run. For extra security, <strong>unplug your Internet access</strong> while generating your wallet.
-            </p>
-            <h3 id="securitystep1title" class="i18n">Step 1. Generate new address</h3>
-            <p id="securitystep1" class="i18n">
-              Choose one of the following that suits you best: Single, Paper, Bulk or Brain Wallet and click on the "Generate new address" button.
-            </p>
-            <h3 id="securitystep2title" class="i18n">Step 2. Print & Save the Wallet</h3>
-            <p id="securitystep2" class="i18n">
-              If you choose Paper Wallet, you can print the page on high quality setting. <strong>Never save the page as a PDF file to "print it later" since the whole idea of Paper is to avoid digital theft. You could however, store the Key's on a couple offline USB's or Harddrives that are locked away safely</strong>
-            </p>
-            <h3 id="securitystep3title" class="i18n">Step 3. Fold the Paper Wallet</h3>
-            <p id="securitystep3" class="i18n">
-              Fold your new Paper wallet following the lines.
-              <img src="images/foldinginstructions.png" alt="Fold in half lengthwise, and then in three widthwise." /><br />
-              You can insert one side inside the other to lock the wallet.
-            </p>
-
-            <h3 id="securitystep4title" class="i18n">Step 4. Share your public address</h3>
-            <p id="securitystep4" class="i18n">
-              Use your public address to receive money from other crypto-currency users. You can share your public address as much as you want.
-            </p>
-            <h3 id="securitystep5title" class="i18n">Step 5. Keep your private key secret</h3>
-            <p id="securitystep5" class="i18n">
-              The private key is literally the keys to your coins, if someone was to obtain it, they could withdraw the funds currently in the wallet, and any funds that might be deposited in that wallet.
-            </p>
-            <p>
-              <strong id="securitystep6" class="i18n">Please test spending a small amount before receiving any large payments.</strong><br /><br />
-            </p>
-            <h3 id="securitystep7title" class="i18n">Consider supporting us</h3>
-            <p id="securitystep7" class="i18n">
-              This service is free and will stay free, without advertising or tracking of any sort. Please consider <a href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));">making a donation</a> to support us and the people that add support for new currencies.
-            </p>
-
-          </div>
-          <div class="secondHalfSingleSafety">
-            <img class="frontPageImage" src="images/overview.png" alt="Overview image of 4 paper wallet" />
-
-            <div class="securityChecklist">
-              <b id="securitychecktitle" class="i18n">Security Checklist :</b>
-
-              <ul>
-              <li id="envSecurityCheck"></li>
-
-              <li id="browserSecurityCheck"></li>
-
-              <li id="securitychecklivecd" class="i18n">
-                Are you using a secure operating system guaranteed to be free of spyware and viruses, for example, an Ubuntu LiveCD?
-              </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div id="faqZone">
-          <h2>Frequently asked questions :</h2>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion1');ninja.toggleFaqQuestion('faqQuestion1.1')">&#8226; Is it safe ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion1">
-            We try to make it that way ! The core of the tool, that generate the keys is 99% the same as the well reviewed bitaddress.org. We only changed it to be able to generate addresses for different crypto-currencies.
-          </p>
-          <p class="faqAnswer" id="faqQuestion1.1">
-We think that having a unique generator for multiple currencies lead to a much better reviewed tool for all than having a myriad of half-backed generators.
-Changes made to this generator are available on Github in small and divided commits and those are easy to review and reuse.
-Walletgenerator.net use the same security measures as the original project. All-in-one html document, no ajax, no analytics, no external calls, no CDN that can inject anything they want. And trust us, we have seen some nasty things when reviewing some wallet generator.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion2');">&#8226; Why should I use a paper wallet ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion2">
-              Advantages of a paper wallet are multiple:<br/><br/>
-              <span class="faqListBullet">&#8658;</span> They are not subject to malwares and keyloggers<br/>
-              <span class="faqListBullet">&#8658;</span> You don’t rely on a third party’s honesty or capacity to protect your coins<br/>
-              <span class="faqListBullet">&#8658;</span> You won't lose your coins when your device break
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion3');">&#8226; How to use a paper wallet ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion3">
-            Once you have generated and printed a wallet, you can send coins to the public address, like for any wallet. Store your paper wallet securely. It contains everything that is needed to spend your funds. Consider using BIP38 to secure your paper wallet with a password.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion4');">&#8226; How to spend the coins stored in a paper wallet ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion4">
-            You will need to import your private key in a real client, that you can download from the currency website. The exact method to do that will depend on the client. If there is no integrated method, you can usually fall back to the debug console and use the command “importprivkey [yourprivatekey]“.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion5');">&#8226; How is this wallet generator different than another wallet generator ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion5">
-            It’s not that different. You will find another design for the paper wallet and some improvements here and there. The big difference is that this is a fork of a unique project for a lot of currencies, so more people can review it and check its safety.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion8');">&#8226; Why should I make a donation ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion8">
-            Donations in Touriva are used to support the Touriva contributors. You can also support walletgenerator.net, those donations will be used to make walletgenerator.net more secure as we plan to organize a CrowdCurity campain as soon as they get enough money to pay for it.
-          </p>
-
-          <h3 class="faqQuestion"><a class="faqLink" onclick="ninja.toggleFaqQuestion('faqQuestion9');">&#8226; I found a bug, what shall I do ?</a></h3>
-          <p class="faqAnswer" id="faqQuestion9">
-            You can report bugs using GitHub. You can also contact us using our Twitter account (<a href="http://twitter.com/TourviOfficial" target="_blank">@TourivaOfficial</a>). Just try to explain clearly what is wrong and we will try to fix the bug as soon as possible.
-          </p>
-
         </div>
       </div>
-
+    </div>
+    <div id="culturemenu">
+      <span><a href="?culture=en" hreflang="en" id="cultureen" class="selected">English</a></span> |
+      <span><a href="?culture=fr" hreflang="fr" id="culturefr">Français</a></span> |
+      <span><a href="?culture=de" hreflang="de" id="culturede">German</a></span> |
+      <span><a href="?culture=nl" hreflang="nl" id="culturenl">Dutch</a></span> |
+      <span><a href="?culture=pt" hreflang="pt" id="culturept">Português</a></span> |
+      <span><a href="?culture=ru" hreflang="ru" id="cultureru">Русский</a></span> |
+      <span><a href="?culture=es" hreflang="es" id="culturees">Spanish</a></span> |
+      <span><a href="?culture=it" hreflang="it" id="cultureit">Italiano</a></span> |
+      <span><a href="?culture=ua" hreflang="ua" id="cultureua">Українська</a></span> |
+      <span><a href="?culture=tr" hreflang="tr" id="culturetr">Türk</a></span> |
+      <span><a href="?culture=pl" hreflang="pl" id="culturepl">Polski</a></span> |
+      <span><a href="?culture=zh" hreflang="zh" id="culturezh">中文</a></span>
+    </div>
       <div id="paperarea">
         <div class="commands">
           <div id="papercommands" class="row">
@@ -465,19 +387,133 @@ Walletgenerator.net use the same security measures as the original project. All-
       </div>
     </div>
     </div>
-
-    <div id="footer" class="footer">
-      <div>
-        <span class="item"><a id="footersupport" href="#" onclick="ninja.tabSwitch(document.getElementById('donate'));" class="i18n">Support WalletGenerator.net</a></span>
-        <span class="item"><a href="https://github.com/Touriva/Touriva-Paperwallet-Generator" target="_blank" id="footerlabelgithub" class="i18n">Download (GitHub Repository)</a></span>
+  </div>
+  <div class="section__alternative-downloads">
+    <div class="alternative__downloads--hero">
+      <div class="intro__text">
+        <h1 data-w-id="d414af96-2351-7f8b-127e-5d932361b025" style="opacity:1" class="dark-heading-2">Paper Wallet Insturction<br></h1>
+        <p data-w-id="d414af96-2351-7f8b-127e-5d932361b028" style="opacity:1" class="text-dark-grey-2">Follow these paper wallet instruction for the optimal paperwallet expiernce</p>
       </div>
-      <div class="copyright">
-        <span id="footerlabelcopyright1">Copyright WalletGenerator.net.</span>
-        <span id="footerlabelcopyright2" class="i18n">JavaScript copyrights are included in the source.</span>
-        <span id="footerlabelnowarranty" class="i18n">No warranty.</span>
+      <div class="insturction__columns w-row">
+        <div data-w-id="ad4fd914-0078-c978-ab1e-91e38d91e9cb" style="opacity:1" class="column-7 w-col w-col-4">
+          <div class="insturction__steps">
+            <h3>Step 0. Follow the security checklist recommendation</h3>
+            <p>First step is to <strong>download</strong> this website from <a href="https://github.com/Touriva/Touriva-Paperwallet-Generator">Github</a> and open the index.html file directly from your computer. It&#x27;s just too easy to sneak some evil code in the 6000+ lines of javascript to leak your private key, and you don&#x27;t want to see your fund stolen. Code version control makes it much easier to cross-check what actually runs. For extra security, <strong>unplug your Internet access</strong> while generating your wallet</p>
+          </div>
+          <div class="insturction__steps">
+            <h3>Step 1. Generate new address</h3>
+            <p>Choose one of the following that suits you best: Single, Paper, Bulk or Brain Wallet and click on the &quot;Generate new address&quot; button</p>
+          </div>
+        </div>
+        <div data-w-id="ad4fd914-0078-c978-ab1e-91e38d91e9cc" style="opacity:1" class="w-col w-col-4">
+          <div class="insturction__steps">
+            <h3>Step 2. Print &amp; Save the Wallet</h3>
+            <p>If you choose Paper Wallet, you can print the page on high quality setting. <strong>Never save the page as a PDF file to &quot;print it later&quot; since the whole idea of Paper is to avoid digital theft. You could however, store the Key&#x27;s on a couple offline USB&#x27;s or Harddrives that are locked away safely</strong></p>
+          </div>
+          <div class="insturction__steps">
+            <h3>Step 3. Fold the Paper Wallet</h3>
+            <p class="paragraph-4">Fold your new Paper wallet following the lines.</p><img src="images/foldinginstructions.png" width="382" height="170" alt="">
+            <p id="Downloads" class="paragraph-4">You can insert one side inside the other to lock the wallet.</p>
+          </div>
+        </div>
+        <div data-w-id="9349ddd5-2e50-5af5-89cc-685a5a029593" style="opacity:1" class="w-col w-col-4">
+          <div class="insturction__steps">
+            <h3>Step 4. Share your public address</h3>
+            <p>Use your public address to receive money from other crypto-currency users. You can share your public address as much as you want.</p>
+          </div>
+          <div class="insturction__steps">
+            <h3>Step 5. Keep your private key secret</h3>
+            <p>The private key is literally the keys to your coins, if someone was to obtain it, they could withdraw the funds currently in the wallet, and any funds that might be deposited in that wallet.<br> <br>‍<strong>Please test spending a small amount before receiving any large payments.</strong></p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <div id="Download" class="section__download">
+    <div class="intro-content">
+      <div class="intro__text">
+        <h1 data-w-id="aa5a40fc-38cd-8dbb-6f55-f20c258d9677" style="opacity:1" class="dark-heading-2">Looking for a wallet client?<br></h1>
+        <p data-w-id="aa5a40fc-38cd-8dbb-6f55-f20c258d967a" style="opacity:1" class="text-dark-grey-2"><strong class="text-dark-grey-2">You can use our QT wallet to import your private key to make a transaction</strong></p>
+      </div>
+      <div class="row">
+        <div class="col lg-3 _2-col-in-mobile">
+          <div data-w-id="8f521bc2-eb64-f7e8-10ef-f9e9886558c9" style="opacity:1" class="margin-bottom"><img src="images/Windows.png" alt="" class="icon-2">
+            <h4>Windows</h4>
+            <p class="paragraph-small">The Windows QT wallet is the perfect way to store your Touriva Coins. It also enables you to setup Touriva Masternodes.</p><a href="https://github.com/Touriva/TOUR/releases/download/v1.1.1a/tour-windows.zip" target="_blank" class="btn w-button">Download Windows</a></div>
+        </div>
+        <div class="col lg-3 _2-col-in-mobile">
+          <div data-w-id="8f521bc2-eb64-f7e8-10ef-f9e9886558d2" style="opacity:1" class="margin-bottom"><img src="images/MacOS.png" alt="" class="icon-2">
+            <h4>macOS</h4>
+            <p class="paragraph-small">The macOS QT wallet is the perfect way to store your Touriva Coins. It also enables you to setup Touriva Masternodes.</p><a href="https://github.com/Touriva/TOUR/releases/download/v1.1.1a/TOUR-Qt.dmg" target="_blank" class="btn w-button">Download MacOS</a></div>
+        </div>
+        <div class="col lg-3 _2-col-in-mobile">
+          <div data-w-id="8f521bc2-eb64-f7e8-10ef-f9e9886558db" style="opacity:1" class="margin-bottom"><img src="images/Linux.png" alt="" class="icon-2">
+            <h4>Ubuntu 18.04</h4>
+            <p class="paragraph-small">The Ubuntu 18.04 QT wallet is the perfect way to store your Touriva Coins. It also enables you to setup Touriva Masternodes.</p><a href="https://github.com/Touriva/TOUR/releases/download/v1.1.1a/tour-linux-18.04.zip" target="_blank" class="btn w-button">Download Ubuntu</a></div>
+        </div>
+        <div class="col lg-3 _2-col-in-mobile">
+          <div data-w-id="8f521bc2-eb64-f7e8-10ef-f9e9886558e4" style="opacity:1" class="margin-bottom"><img src="images/icons8-github-100_1icons8-github-100.png" alt="" class="icon-2">
+            <h4>Github</h4>
+            <p class="paragraph-small">Github is the place where we collaborate and upgrade the Touriva Source code you can also find older releases and versions here.</p><a href="https://github.com/Touriva/TOUR/releases" target="_blank" class="btn w-button">Go to Github</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="discord-section">
+    <div class="cta-section w-row">
+      <div class="column w-col w-col-6 w-col-small-small-stack">
+        <div data-w-id="356899c9-b974-a2c3-bfe3-64b728799dca" style="opacity:1" class="div-block-31 w-clearfix">
+          <h1 class="dark-heading">Join the Conversation.</h1>
+          <p class="text-dark-grey">Discord is where we post important announcements, interact with miners and traders, respond to support queries, listen to suggestions, and more.</p><a href="https://discord.gg/dWSY7We" target="_blank" class="button4 w-button">join us</a></div>
+      </div>
+      <div id="SignUP" class="column-2 w-col w-col-6 w-col-small-small-stack">
+        <div data-w-id="356899c9-b974-a2c3-bfe3-64b728799dd2" style="opacity:1" class="col lg-4">
+          <div class="margin-bottom">
+            <h2 class="heading-4">Sign up for our Newsletter</h2>
+            <p class="paragraph-3">Stay updated with all the latest developments and announcements.</p>
+          </div>
+          <div class="form w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" action="https://touriva.us8.list-manage.com/subscribe/post?u=1677feda0b81580911ffec2ff&amp;amp;id=d0013810a0" method="post"><input type="text" class="form-field w-input" maxlength="256" name="NAME" data-name="NAME" placeholder="Enter your name" id="NAME" required=""><input type="email" class="form-field w-input" maxlength="256" name="EMAIL" data-name="EMAIL" placeholder="Enter your email" id="EMAIL" required=""><input type="submit" value="Submit" data-wait="Please wait..." class="button-2 w-button"></form>
+            <div class="success-message w-form-done">
+              <div class="text-block-5">Thank you! Your submission has been received!</div>
+            </div>
+            <div class="error-message w-form-fail">
+              <div class="text-block-6">Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-section">
+    <div class="footer-content">
+      <div data-w-id="8700165a-339b-2dd4-20e2-6435b95f16a2" style="opacity:1" class="footer-colomms w-row">
+        <div class="first-columm w-col w-col-3 w-col-medium-6">
+          <div class="footer-block about-us">
+            <h1 class="footer-heading white">About Us</h1>
+            <p class="lighter-paragraph"><strong>Touriva,</strong> a decentralized peer-to-peer travel network powered by blockchain technology</p>
+          </div>
+        </div>
+        <div class="second-columm w-col w-col-3 w-col-medium-6">
+          <div class="footer-block">
+            <h1 class="footer-heading white">NAvigation</h1><a href="https://touriva.info" class="footer-sub-link">Home</a><a href="https://touriva.info/links" class="footer-sub-link">Links</a><a href="https://explorer.touriva.info" target="_blank" class="footer-sub-link">Explorer</a><a href="https://github.com/Touriva/masternode-install" target="_blank" class="footer-sub-link">Masternodes</a><a href="https://github.com/Touriva" target="_blank" class="footer-sub-link">GitHub</a></div>
+        </div>
+        <div class="third-columm w-col w-col-3 w-col-medium-6">
+          <div class="footer-block">
+            <h1 class="footer-heading white">USEFUL LINKS</h1><a href="https://discord.io/touriva" target="_blank" class="footer-sub-link">Discord</a><a href="https://bitcointalk.org/index.php?topic=5183843" target="_blank" class="footer-sub-link">BitcoinTalk</a><a href="https://twitter.com/TourivaOfficial" target="_blank" class="footer-sub-link">Twitter</a><a href="https://www.instagram.com/tourivaworld/" target="_blank" class="footer-sub-link">Instagram</a><a href="https://touriva.info/whitepaper" class="footer-sub-link">Whitepaper</a></div>
+        </div>
+        <div class="contact-columm w-col w-col-3 w-col-medium-6">
+          <div class="footer-block">
+            <h1 class="footer-heading white">CONTACT INFO</h1><a href="mailto:info@touriva.info" class="footer-sub-link posts">Write To Us</a>
+            <p class="lighter-paragraph">Email: Info@Touriva.info</p><a href="https://icons8.com" target="_blank" class="footer-sub-link posts icons8">Icons by Icons8</a>
+            <p class="lighter-paragraph">This wallet generator is powered by:</p><a href="https://github.com/walletgeneratornet/WalletGenerator.net" target="_blank" class="w-inline-block"><img src="images/banner.png" height="50" srcset="images/banner-p-500.png 500w, images/banner.png 523w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 326.8833312988281px, (max-width: 991px) 40vw, (max-width: 1439px) 21vw, 260px" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ed4d25184fd992f50851d2e" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="src/js/webflow.js" type="text/javascript"></script> -->
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 
   <script src="src/doge.js" type="text/javascript"></script>
   <script src="src/janin.currency.js" type="text/javascript"></script>
@@ -492,5 +528,7 @@ Walletgenerator.net use the same security measures as the original project. All-
   <script src="src/ninja.donatetab.js" type="text/javascript"></script>
   <script src="src/ninja.unittests.js" type="text/javascript"></script>
   <script src="src/ninja.onload.js" type="text/javascript"></script>
+
+
 </body>
 </html>
