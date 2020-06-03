@@ -1105,6 +1105,12 @@ textarea.w-select {
     padding-left: 10px;
   }
 }
+
+.wrapper-4 nav-bar-wrapper {
+  width: 85%;
+  height: auto;
+}
+
 /**
  * ## Note
  * Safari (on both iOS and OS X) does not handle viewport units (vh, vw) well.
