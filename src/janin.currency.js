@@ -71,5 +71,5 @@ janin.currency = {
 
 janin.currencies = [
     //                              name, networkVersion, privateKeyPrefix, WIF_Start, CWIF_Start, donate
-    janin.currency.createCurrency ("touriva",            0x3d, 0xbd, "7",    "[UV]" , "TF57DGsQK25dZLRM4mhZ4C5PmpnXXTTEMD")
+    janin.currency.createCurrency ("Touriva",            0x3d, 0xbd, "7",    "[UV]" , "TF57DGsQK25dZLRM4mhZ4C5PmpnXXTTEMD")
                    ];
